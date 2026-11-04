@@ -1,0 +1,27 @@
+{
+  "name": "squeekstr-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --experimental-strip-types --test tests/engine.test.ts",
+    "test:browser": "node tests/browser.mjs",
+    "check:bundle": "node scripts/check-bundle.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3",
+    "vite": "7.2.2",
+    "playwright": "1.58.2",
+    "axe-core": "4.11.1"
+  }
+}
